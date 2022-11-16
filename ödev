@@ -5,13 +5,13 @@ int main() {
 int num1,num2,result;
 char decision;
 
-printf("press a for addition, press s for subtraction, press anything else for quit: ");
+printf("Press 'a' key for addition, press 's' key for subtraction, press anything else for quit program: ");
 scanf("%c",&decision);
 
 
 switch (decision)   {
     case 'a':
-        printf("enter two integers: ");
+        printf("Enter two integers: ");
         scanf("%d %d",&num1,&num2);
         result = num1 + num2 ;
         printf("Summary of these numbers are %d",result);
@@ -21,11 +21,11 @@ switch (decision)   {
         printf("enter two integers: ");
         scanf("%d %d",&num1,&num2);
         result = num1-num2 ;
-        printf("subtraction  of these numbers are %d",result);
+        printf("Subtraction  of these numbers are %d",result);
         break;
 
     default:
-        printf("exiting program ");
+        printf("Exiting program... ");
         break ;
   }
 
