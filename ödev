@@ -1,24 +1,35 @@
+
 #include<stdio.h>
 int main() {
 
-int a,b,c;
-char d,e;
-printf("press a for addition, press s for subtraction");
-scanf("%c",&d);
-if (d== 'a'){
-  printf("enter two integers: ");
-  scanf("%d %d",&a,&b);
+int num1,num2,result;
+char decision;
 
-  c = a + b ;
-  printf("Summary of these numbers ara %d",c);
+printf("press a for addition, press s for subtraction, press anything else for quit: ");
+scanf("%c",&decision);
+
+
+switch (decision)   {
+    case 'a':
+        printf("enter two integers: ");
+        scanf("%d %d",&num1,&num2);
+        result = num1 + num2 ;
+        printf("Summary of these numbers are %d",result);
+        break;
+
+    case 's':
+        printf("enter two integers: ");
+        scanf("%d %d",&num1,&num2);
+        result = num1-num2 ;
+        printf("subtraction  of these numbers are %d",result);
+        break;
+
+    default:
+        printf("exiting program ");
+        break ;
   }
-else if (d== 's'){
-  printf("enter two integers: ");
-  scanf("%d %d",&a,&b);
-  c = a-b;
-  printf("subtraction  of these numbers ara %d",c);
-  }
-  
+
+
 
 return(0) ;
 
