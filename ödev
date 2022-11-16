@@ -1,13 +1,24 @@
 #include<stdio.h>
 int main() {
 
-int a,b,sum;
+int a,b,c;
+char d,e;
+printf("press a for addition, press s for subtraction");
+scanf("%c",&d);
+if (d== 'a'){
+  printf("enter two integers: ");
+  scanf("%d %d",&a,&b);
 
-printf("enter two integers: ");
-scanf("%d %d",&a,&b);
-
-sum = a + b ;
-printf("Summary of these numbers ara %d",sum) ;
+  c = a + b ;
+  printf("Summary of these numbers ara %d",c);
+  }
+else if (d== 's'){
+  printf("enter two integers: ");
+  scanf("%d %d",&a,&b);
+  c = a-b;
+  printf("subtraction  of these numbers ara %d",c);
+  }
+  
 
 return(0) ;
 
