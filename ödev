@@ -1,7 +1,14 @@
 #include<stdio.h>
 int main() {
 
-printf("Hello world");
-prinntf("I love ceng 105");
+int a,b,sum;
+
+printf("enter two integers: ");
+scanf("%d %d",&a,&b);
+
+sum = a + b ;
+printf("Summary of these numbers ara %d",sum) ;
+
+return(0) ;
 
 }
