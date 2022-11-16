@@ -1,11 +1,19 @@
-
 #include<stdio.h>
+#include<math.h>
 int main() {
 
 int num1,num2,result;
+float a,b,division;
 char decision;
 
-printf("Press 'a' key for addition, press 's' key for subtraction, press anything else for quit program: ");
+
+
+
+
+
+
+printf("Press 'a' key for addition, 's' for substraction,'m' for multiplication, 'd' for dividing. press anything else for quit program: ");
+
 scanf("%c",&decision);
 
 
@@ -24,13 +32,26 @@ switch (decision)   {
         printf("Subtraction  of these numbers are %d",result);
         break;
 
+    case 'm':
+        printf("enter two integers: ");
+        scanf("%d %d",&num1,&num2);
+        result = num1 * num2 ; 
+        printf("Product of these numbers are %d",result);
+        break;
+
+    case 'd':
+        printf("enter two integers: ");
+        scanf("%f %f",&a,&b);
+        division = a / b ; 
+        printf("Division of these numbers are %.2f",division);
+        break;
+
+    
     default:
         printf("Exiting program... ");
-        break ;
-  }
+        
 
-
-
-return(0) ;
-
+   }
+return(0);
 }
+
